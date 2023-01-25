@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tr1nh</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <script src="./js/tailwindcss.js"></script>
+    <style>
+      :root {
+        --primary: blue;
+        --secondary: white;
+      }
+      ::selection {
+        background-color: var(--primary);
+        color: var(--secondary);
+      }
+    </style>
+  </head>
+  <body class="bg-[var(--secondary)] text-[var(--primary)]">
+    <div id="web" class="mx-auto p-4 max-w-2xl">
+      <header class="
+        border-b-2 border-[var(--primary)] pb-3
+        flex flex-col items-start
+        md:flex-row md:justify-between">
+        <div>
+          <span class="text-sm">Junior Developer</span>
+          <h1 class="text-5xl font-semibold">tr1nh</h1>
+        </div>
+        <div>
+          <span class="text-sm">Color theme</span>
+          <div class="
+            border-2 border-[var(--primary)]
+            flex flex-row justify-center items-center
+            divide-x-2 divide-[var(--primary)]">
+            <a href="#" class="header__button
+              py-2 px-4
+              bg-[var(--primary)]
+              text-[var(--secondary)]
+              hover:bg-[var(--primary)]
+              hover:text-[var(--secondary)]"
+              onclick="updateThemeColor(event, 'default')">
+              Default
+            </a>
+            <a href="#" class="header__button
+              py-2 px-4
+              hover:bg-[var(--primary)]
+              hover:text-[var(--secondary)]"
+              onclick="updateThemeColor(event, 'red')">
+              Red
+            </a>
+            <a href="#" class="header__button
+              py-2 px-4
+              hover:bg-[var(--primary)]
+              hover:text-[var(--secondary)]"
+              onclick="updateThemeColor(event, 'green')">
+              Green
+            </a>
+            <a href="#" class="header__button
+              py-2 px-4
+              hover:bg-[var(--primary)]
+              hover:text-[var(--secondary)]"
+              onclick="updateThemeColor(event, 'blue')">
+              Blue
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <nav class="mt-4 flex flex-row gap-4">
+        <a href="./index.html" class="
+          border-2 border-[var(--primary)] py-2 px-4
+          w-full text-center
+          hover:bg-[var(--primary)]
+          hover:text-[var(--secondary)]">
+          Home
+        </a>
+        <a href="./timeline.html" class="
+          border-2 border-[var(--primary)] py-2 px-4
+          w-full text-center
+          hover:bg-[var(--primary)]
+          hover:text-[var(--secondary)]">
+          Timeline
+        </a>
+        <a href="./projects.html" class="
+          border-2 border-[var(--primary)] py-2 px-4
+          w-full bg-[var(--primary)]
+          text-[var(--secondary)] text-center
+          hover:bg-[var(--primary)]
+          hover:text-[var(--secondary)]">
+          Projects
+        </a>
+      </nav>
+
+      <div class="mt-4 flex flex-col gap-4 md:flex-row">
+        <div class="w-full md:w-1/2 flex flex-col gap-2">
+          <section>
+            <span class="text-sm">Notification</span>
+            <div class="border-2 border-[var(--primary)] p-4">
+              <p>Work in progress</p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
